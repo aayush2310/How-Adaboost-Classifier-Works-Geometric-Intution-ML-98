@@ -1,0 +1,15 @@
+Weak Learners:-A ML model whose accuracy is very less.Just a little more than 50%
+In adaboost we combine multiple weak learners to make a big powerful model.
+
+Decision Stumps:-They are basically weak learners.A decision tree having max depth as 1.In adaboost they are used.
+In adaboost classification we have either +1 or -1.
+Adaboost is a stage wise additive method.
+We will fit that decision stump which causes most reduction in entropy.
+
+We put first decision boundary and we found that 3 + were misclassified,so we do upsampling of those 3 + that is increase the weights of those in the next round i.e more 
+focus on those 3 +
+We also calculate the alpha of that decision model which states that how much say will that model have in final prediction.
+alpha is calculated on the basis of how many errors are you making in your classification and how many are you classifing correctly.
+
+We finally do weighted average of the models we produced.
+The more iterations we do,the more perfection we will get.
